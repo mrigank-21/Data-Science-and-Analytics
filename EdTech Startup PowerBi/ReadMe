@@ -1,0 +1,84 @@
+EdTech Course Analysis Dashboard using Power BI
+(Note: Replace this image with a high-quality screenshot of your final dashboard)
+
+🚀 Project Overview
+This project involves the development of an end-to-end business intelligence solution for a fictional EdTech startup. The goal is to analyze a comprehensive dataset of online courses to uncover actionable insights that can drive business growth, guide content strategy, and support data-driven decision-making.
+
+The entire project was built in Power BI, following the complete BI lifecycle: data cleaning and transformation, data modeling, DAX calculations, and interactive dashboard design and deployment.
+
+➡️ View the Live Interactive Dashboard Here
+(Note: Replace this with your actual "Publish to web" link from Power BI Service)
+
+🎯 Key Business Questions Addressed
+The dashboard was designed to answer the following critical questions for the EdTech startup:
+
+Course Distribution: What is the distribution of course types (e.g., Specialization, Certificate) across different categories?
+
+Viewer Engagement: What are the average viewership numbers for each category, sub-category, and language?
+
+In-Demand Skills: What are the most commonly taught skills in the current market?
+
+Language Landscape: In which languages are most courses created, and which languages do viewers in top categories prefer?
+
+Subtitle Impact: Is there a relationship between the availability of subtitles and course viewership?
+
+Top Instructors: Who are the top 3 rated instructors for each category and sub-category?
+
+Duration vs. Views: How does the length of a course influence viewer engagement?
+
+Skill Variety: Does offering a wider variety of skills in a course impact its viewership?
+
+🛠️ Technical Skills & Tools Used
+BI Tools: Power BI Desktop, Power BI Service
+
+Core Languages: DAX (Data Analysis Expressions), M Language (Power Query)
+
+Data Skills:
+
+Data Cleaning & Transformation (ETL)
+
+Data Modeling (Relational Star Schema)
+
+Data Visualization & Dashboard Design
+
+Requirements Analysis & Logic Building
+
+Key Visuals: Slicers, Matrix, Stacked Charts, Line Charts, Drill-Down Charts, Word Cloud (Custom Visual)
+
+⚙️ Project Workflow
+Data Cleaning and Transformation (ETL):
+
+Connected to the raw dataset and performed extensive data cleaning in the Power Query Editor.
+
+Removed duplicate, blank, and error-filled rows to ensure data integrity.
+
+Engineered custom columns using M Language to parse and count comma-separated values (e.g., number of skills, subtitles).
+
+Executed an advanced unpivot transformation on instructor data to normalize the dataset, enabling accurate individual instructor analysis.
+
+Data Modeling:
+
+Created a relational data model with proper relationships between the primary fact table and newly created dimension tables (e.g., a separate, unpivoted Instructors table).
+
+DAX Calculations:
+
+Authored over 10 complex DAX measures to perform sophisticated analysis.
+
+Key measures include a RANKX function to dynamically identify and filter for the top 5 course categories by average viewership and another to rank the top 3 instructors by rating.
+
+Dashboard Design & Visualization:
+
+Designed a multi-page interactive dashboard with a focus on user experience and a clear, category-wise analytical flow.
+
+Implemented slicers and drill-down functionality to allow stakeholders to explore data from a high-level overview down to granular details.
+
+Deployment:
+
+Published the final report to Power BI Service and generated a shareable web link for seamless stakeholder access.
+
+📊 Key Insights & Findings
+Subtitle Impact: A clear positive correlation was found between the number of subtitle languages and viewer engagement. Courses with 15+ subtitles had significantly higher viewership.
+
+Top Skills: The Word Cloud analysis confirmed that skills like Data Analysis and Python Programming are highly prevalent and in-demand across categories.
+
+Top Instructors: The dashboard successfully identifies a dynamic list of top-rated instructors for any given category, providing a direct pipeline for potential talent acquisition.
