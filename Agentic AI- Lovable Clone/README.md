@@ -1,59 +1,41 @@
-🛠️ Coder Buddy
-Coder Buddy is an AI-powered coding assistant built with LangGraph. It works like a multi-agent development team that can take a natural language request and transform it into a complete, working project — file by file — using real developer workflows.
+# 🛠️ Coder Buddy
 
-🏛️ Architecture
-Our agentic workflow is built on a clear, multi-step process that ensures high-quality output. Each agent has a specific role, turning a simple prompt into a fully realized application.
+**Coder Buddy** is an AI-powered coding assistant built with [LangGraph](https://github.com/langchain-ai/langgraph).  
+It works like a multi-agent development team that can take a natural language request and transform it into a complete, working project — file by file — using real developer workflows.
 
-Planner Agent – Analyzes your request and generates a detailed project plan.
+---
 
-Architect Agent – Breaks down the plan into specific engineering tasks with explicit context for the coder.
+## 🏗️ Architecture
 
-Coder Agent – Implements each task, writes directly into files, and uses available tools to build the project.
+- **Planner Agent** – Analyzes your request and generates a detailed project plan.
+- **Architect Agent** – Breaks down the plan into specific engineering tasks with explicit context for each file.
+- **Coder Agent** – Implements each task, writes directly into files, and uses available tools like a real developer.
 
-✨ Key Features
-Autonomous Web App Generation: Takes a high-level prompt and generates a complete, functional project.
+<div style="text-align: center;">
+    <img src="resources/coder_buddy_diagram.png" alt="Coder Agent Architecture" width="90%"/>
+</div>
 
-Powered by Gemini: Integrates with Google's Gemini API for state-of-the-art reasoning and code generation.
+---
 
-Generates Complete Projects: Outputs a full project directory with well-structured HTML, CSS, JavaScript, and a README.md file.
+## 🚀 Getting Started
+### Prerequisites
+- Make sure you have uv installed, follow the instructions [here](https://docs.astral.sh/uv/getting-started/installation/) to install it.
+- Ensure that you have created a groq account and have your API key ready. Create an API key [here](https://console.groq.com/keys).
 
-🚀 Getting Started
-Follow these steps to set up and run Coder Buddy on your local machine.
+### ⚙️ **Instsllstion and Startup**
+- Create a virtual environment using: `uv venv` and activate it using `source .venv/bin/activate`
+- Install the dependencies using: `uv pip install -r pyproject.toml`
+- Create a `.env` file and add the variables and their respective values mentioned in the `.sample_env` file
 
-Prerequisites
-Python 3.9+
+Now that we are done with all the set-up & installation steps we can start the application using the following command:
+  ```bash
+    python main.py
+  ```
 
-uv package manager (recommended)
+### 🧪 Example Prompts
+- Create a to-do list application using html, css, and javascript.
+- Create a simple calculator web application.
+- Create a simple blog API in FastAPI with a SQLite database.
 
-A Google Gemini API Key
-
-Installation
-Clone the repository:
-
-git clone [https://github.com/your-username/coder-buddy.git](https://github.com/your-username/coder-buddy.git)
-cd coder-buddy
-
-Create and activate a virtual environment:
-
-uv venv
-source .venv/bin/activate
-
-Install dependencies:
-
-uv pip install -r requirements.txt
-
-Set up your environment variables:
-
-Create a .env file from the sample: cp .sample_env .env
-
-Add your Google Gemini API key to the .env file.
-
-Usage
-Run the main script with your project prompt:
-
-python main.py "Create a simple to-do list web application."
-
-The generated project will appear in a new directory inside the generated_projects folder.
-
-🤝 Contributing
-Contributions are welcome! Please feel free to open an issue or submit a pull request.
+---
+Copyright©️ Codebasics Inc. All rights reserved.
