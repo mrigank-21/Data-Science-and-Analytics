@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="1400" viewBox="0 0 900 1400"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <!-- Arrowhead marker -->
+    <marker id="arrow" markerWidth="10" markerHeight="10"
+            refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L6,3 z" fill="#333" />
+    </marker>
+
+    <!-- Common styles -->
+    <style><![CDATA[
+      .box {
+        rx: 12;
+        ry: 12;
+        stroke: #333;
+        stroke-width: 2;
+      }
+      .title {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        fill: #000;
+      }
+      .text {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 15px;
+        fill: #000;
+      }
+      .center {
+        text-anchor: middle;
+      }
+    ]]></style>
+  </defs>
+
+  <!-- Start -->
+  <rect x="325" y="30" width="250" height="50"
+        class="box" fill="#228B22" stroke="#1b6b1b" />
+  <text x="450" y="61" class="title center" fill="#ffffff">
+    Start Project
+  </text>
+
+  <!-- Arrow Start -> Phase 1 -->
+  <line x1="450" y1="80" x2="450" y2="120"
+        stroke="#333" stroke-width="2" marker-end="url(#arrow)" />
+
+  <!-- Phase 1: Project Setup (s1: #D6EAF8) -->
+  <rect x="100" y="120" width="700" height="150"
+        class="box" fill="#D6EAF8" />
+  <text x="450" y="150" class="title center">
+    1. Project Setup
+  </text>
+  <text x="130" y="180" class="text">
+    • Import Libraries [3]
+  </text>
+  <text x="130" y="205" class="text">
+    • Define CONFIGURATION [31]
+  </text>
+  <text x="130" y="230" class="text">
+    • Wandb Installation &amp; Login [54, 59]
+  </text>
+  <text x="130" y="255" class="text">
+    • Data Downloading [69]
+  </text>
+
+  <!-- Arrow 1 -> 2 -->
+  <line x1="450" y1="270" x2="450" y2="310"
+        stroke="#333" stroke-width="2" marker-end="url(#arrow)" />
+
+  <!-- Phase 2: Data Prep (s2: #E8DAEF) -->
+  <rect x="100" y="310" width="700" height="170"
+        class="box" fill="#E8DAEF" />
+  <text x="450" y="340" class="title center">
+    2. Data Preparation &amp; Augmentation
+  </text>
+  <text x="130" y="370" class="text">
+    • Dataset Loading [81]
+  </text>
+  <text x="130" y="395" class="text">
+    • Dataset Visualization [112]
+  </text>
+  <text x="130" y="420" class="text">
+    • Data Augmentation (Keras) [139]
+  </text>
+  <text x="130" y="445" class="text">
+    • Cutmix Augmentation [147]
+  </text>
+  <text x="130" y="470" class="text">
+    • Dataset Preparation (tf.data) [175, 186]
+  </text>
+
+  <!-- Arrow 2 -> 3 -->
+  <line x1="450" y1="480" x2="450" y2="520"
+        stroke="#333" stroke-width="2" marker-end="url(#arrow)" />
+
+  <!-- Phase 3: Model Exploration (s3: #D5F5E3) -->
+  <rect x="100" y="520" width="700" height="210"
+        class="box" fill="#D5F5E3" />
+  <text x="450" y="550" class="title center">
+    3. Model Exploration
+  </text>
+  <text x="130" y="580" class="text">
+    • Modeling Headline [214]
+  </text>
+  <text x="130" y="605" class="text">
+    • Model 1: LeNet [215]
+  </text>
+  <text x="130" y="630" class="text">
+    • Model 2: Custom ResNet34 [243, 263, 282]
+  </text>
+  <text x="130" y="655" class="text">
+    • Model 3: EffNetB4 TL [304]
+  </text>
+  <text x="130" y="680" class="text">
+    • Model 4: MobileNetV2 TL [328]
+  </text>
+  <text x="130" y="705" class="text">
+    • Model 5: Fine-tune EffNet [381]
+  </text>
+  <text x="130" y="730" class="text">
+    • Model 6: Custom ViT [402, 432, 452]
+  </text>
+  <text x="130" y="755" class="text">
+    • Model 7: Hugging Face ViT [480]
+  </text>
+
+  <!-- Arrow 3 -> 4 -->
+  <line x1="450" y1="760" x2="450" y2="800"
+        stroke="#333" stroke-width="2" marker-end="url(#arrow)" />
+
+  <!-- Phase 4: Training & Evaluation (s4: #FADBD8) -->
+  <rect x="100" y="800" width="700" height="200"
+        class="box" fill="#FADBD8" />
+  <text x="450" y="830" class="title center">
+    4. Training &amp; Evaluation
+  </text>
+  <text x="130" y="860" class="text">
+    • Training Headline [580]
+  </text>
+  <text x="130" y="885" class="text">
+    • Class Weighting [581]
+  </text>
+  <text x="130" y="910" class="text">
+    • Define Callbacks [591]
+  </text>
+  <text x="130" y="935" class="text">
+    • Train Model [626]
+  </text>
+  <text x="130" y="960" class="text">
+    • Ensembling [693]
+  </text>
+  <text x="130" y="985" class="text">
+    • Evaluation &amp; Testing [700, 709]
+  </text>
+  <text x="130" y="1010" class="text">
+    • Confusion Matrix [746]
+  </text>
+
+  <!-- Arrow 4 -> 5 -->
+  <line x1="450" y1="1015" x2="450" y2="1055"
+        stroke="#333" stroke-width="2" marker-end="url(#arrow)" />
+
+  <!-- Phase 5: Explainability (s5: #FEF9E7) -->
+  <rect x="100" y="1055" width="700" height="150"
+        class="box" fill="#FEF9E7" />
+  <text x="450" y="1085" class="title center">
+    5. Model Explainability (XAI)
+  </text>
+  <text x="130" y="1115" class="text">
+    • Get Attention Maps (ViT) [561]
+  </text>
+  <text x="130" y="1140" class="text">
+    • Visualization Headline [808]
+  </text>
+  <text x="130" y="1165" class="text">
+    • Feature Map Visualization (VGG) [809]
+  </text>
+  <text x="130" y="1190" class="text">
+    • GradCam (EfficientNet) [906]
+  </text>
+
+  <!-- Arrow 5 -> 6 -->
+  <line x1="450" y1="1200" x2="450" y2="1240"
+        stroke="#333" stroke-width="2" marker-end="url(#arrow)" />
+
+  <!-- Phase 6: Optimization & Deployment (s6: #D1F2EB) -->
+  <rect x="100" y="1240" width="700" height="190"
+        class="box" fill="#D1F2EB" />
+  <text x="450" y="1270" class="title center">
+    6. Optimization &amp; Deployment
+  </text>
+  <text x="130" y="1300" class="text">
+    • TFRecords Pipeline [1570]
+  </text>
+  <text x="130" y="1325" class="text">
+    • Export to ONNX format [1005]
+  </text>
+  <text x="130" y="1350" class="text">
+    • ONNX Conversion &amp; Benchmarking [1074, 1143, 1152]
+  </text>
+  <text x="130" y="1375" class="text">
+    • Quantization: ONNX, TF, TFLite [1171, 1290, 1326]
+  </text>
+  <text x="130" y="1400" class="text">
+    • TFLite Runtime Inference &amp; Pruning [1359, 1409]
+  </text>
+
+  <!-- End box (shifted down slightly to clear text) -->
+  <rect x="325" y="1430" width="250" height="50"
+        class="box" fill="#DC143C" stroke="#a50f2c" />
+  <text x="450" y="1461" class="title center" fill="#ffffff">
+    End Project
+  </text>
+</svg>
