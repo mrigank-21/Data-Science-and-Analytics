@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Snake Game</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main game container wrapping canvas and UI controls -->
+    <div id="game-container">
+        <!-- Canvas where the snake game is rendered -->
+        <canvas id="game-canvas" width="400" height="400"></canvas>
+        <!-- Score display panel -->
+        <div id="score-panel">Score: <span id="score">0</span></div>
+        <!-- Control buttons for game interaction -->
+        <div id="controls">
+            <button id="start-btn">Start</button>
+            <button id="pause-btn" disabled>Pause</button>
+            <button id="restart-btn" disabled>Restart</button>
+        </div>
+    </div>
+    <!-- Fallback message for users with JavaScript disabled -->
+    <noscript>
+        JavaScript is required to play the Classic Snake Game. Please enable JavaScript in your browser settings.
+    </noscript>
+    <!-- Main script handling game logic -->
+    <script src="script.js"></script>
+</body>
+</html>

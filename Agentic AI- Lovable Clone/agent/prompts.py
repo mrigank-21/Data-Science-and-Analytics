@@ -1,7 +1,7 @@
 def planner_prompt(user_prompt: str) -> str:
     PLANNER_PROMPT = f"""
-You are the PLANNER agent. Convert the user prompt into a COMPLETE engineering project plan.
-
+You are the PLANNER agent. Convert the user prompt into a COMPLETE engineering project plan. Plan as less features and logic possible.
+Keep it primitive and simple. User should be able to directly run without any extra step.  
 User request:
 {user_prompt}
     """
@@ -14,7 +14,7 @@ You are the ARCHITECT agent. Given this project plan, break it down into explici
 
 RULES:
 - For each FILE in the plan, create one or more IMPLEMENTATION TASKS.
-- In each task description:
+- In each IMPLEMENTATION task description:
     * Specify exactly what to implement.
     * Name the variables, functions, classes, and components to be defined.
     * Mention how this task depends on or will be used by previous tasks.
@@ -32,7 +32,12 @@ def coder_system_prompt() -> str:
     CODER_SYSTEM_PROMPT = """
 You are the CODER agent.
 You are implementing a specific engineering task.
-You have access to tools to read and write files.
+
+You have access to the following tools:
+1. read_file(path) will reads the content of a file.
+2. write_file(path,content) will write content to a file.
+3. list_file(directory) will lists files in a directory.
+4. get_current_directory() will returns the current working directory.
 
 Always:
 - Review all existing files to maintain compatibility.

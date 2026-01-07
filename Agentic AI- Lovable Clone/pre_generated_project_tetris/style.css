@@ -1,0 +1,25 @@
+/* Basic styling for the page and the game canvas */
+
+/* CSS variables for game colors and dimensions */
+:root {
+    --cell-size: 30px; /* size of a single Tetris block */
+    --background-color: #111; /* page background */
+    --canvas-bg: #000; /* canvas background */
+    --canvas-border: #555; /* canvas border color */
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--background-color);
+}
+
+#gameCanvas {
+    background: var(--canvas-bg);
+    border: 2px solid var(--canvas-border);
+    display: block;
+    /* The canvas size is set in the HTML attributes; no need for width/height here */
+}
