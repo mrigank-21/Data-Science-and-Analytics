@@ -20,7 +20,7 @@ It works like a multi-agent development team that can take a natural language re
 ## 🚀 Getting Started
 ### Prerequisites
 - Make sure you have uv installed, follow the instructions [here](https://docs.astral.sh/uv/getting-started/installation/) to install it.
-- Ensure that you have created a gemini account and have your API key ready. Create an API key [here](https://aistudio.google.com/api-keys).
+- Ensure that you have created a groq account and have your API key ready. Create an API key [here](https://console.groq.com/keys).
 
 ### ⚙️ **Installation and Startup**
 - Create a virtual environment using: `uv venv` and activate it using `source .venv/bin/activate`
